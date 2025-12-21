@@ -12,6 +12,11 @@ enum {
   SEG_DP = (1 << 7),
 };
 
+void display_init();
+
+void display_cm(uint8_t value, uint16_t ms);
+void display_chars(char left, char right, uint16_t ms);
+
 void digits_off(void);
 void digit_on(uint8_t digit);
 void digit_off(uint8_t digit);
