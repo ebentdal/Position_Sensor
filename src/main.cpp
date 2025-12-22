@@ -17,6 +17,7 @@ int main(void) {
         uint8_t show = (cm > 99) ? 99 : (uint8_t)cm;
         display_cm(show, 70);
         
+        
     
   }
 }

@@ -64,6 +64,7 @@ void display_cm(uint8_t value, uint16_t ms) {
   char tens = (value >= 10) ? ('0' + (value / 10)) : ' ';   
   char ones = '0' + (value % 10);
   display_chars(tens, ones, ms);
+  PORTC ^= (1 << PC2);
 }
 
 
